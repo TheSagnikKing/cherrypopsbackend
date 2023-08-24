@@ -19,7 +19,7 @@ const createOrder = async (req, res) => {
 
 const checkout = async (req, res) => {
     const options = {
-        amount: Number(req.body.amount),
+        amount: Number(req.body.amount*100),
         currency: "INR"
     };
 
