@@ -70,7 +70,7 @@ const paymentverification = async (req, res) => {
 
             await orderToUpdate.save();
             
-            res.redirect(`https://cherrypops-1.vercel.app/paymentsuccess?reference=${razorpay_payment_id}`);
+            res.redirect(`https://cherrypops2.vercel.app/paymentsuccess?reference=${razorpay_payment_id}`);
         }else {
             res.status(404).json({
                 success: false,
